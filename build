@@ -1,0 +1,18 @@
+#!/bin/bash
+set -ue
+
+(
+  cd src/gestures
+  CXXFLAGS="-Wno-class-memaccess -Wno-int-in-bool-context -Wno-format-truncation" make
+)
+
+(
+  cd src/xf86-input-cmt
+  bash autogen.sh
+  autoconf
+  make
+)
+
+echo ""
+echo "Build finished"
+

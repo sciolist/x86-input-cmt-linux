@@ -1,0 +1,9 @@
+[submodule "src/xf86-input-cmt"]
+	path = src/xf86-input-cmt
+	url = https://chromium.googlesource.com/chromiumos/platform/xf86-input-cmt
+[submodule "src/gestures"]
+	path = src/gestures
+	url = https://chromium.googlesource.com/chromiumos/platform/gestures
+[submodule "src/xorg-conf"]
+	path = src/xorg-conf
+	url = https://chromium.googlesource.com/chromiumos/platform/xorg-conf

@@ -1,0 +1,15 @@
+#!/bin/bash
+set -ue
+
+(
+  cd src/gestures
+  rm -rf ./usr
+  make install
+  sudo cp -r ./usr/* /usr/
+)
+
+(
+  cd src/xf86-input-cmt
+  sudo make install
+)
+
